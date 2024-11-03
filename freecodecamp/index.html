@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML, CSS, and JavaScript Explained for Beginners</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
@@ -21,10 +22,10 @@
         green color
       </h3>
       <p class="first">
-        This is a <em>paragragh</em> As you can see, I placed an empahisis on
-        the word "paragraph". Now, I will change also the background color of
-        the word "paragraph" to black, and its text color to green, all with
-        just CSS.
+        This is a <em>paragraph</em> As you can see, I placed an emphasis on the
+        word "paragraph". Now, I will change also the background color of the
+        word "paragraph" to black, and its text color to green, all with just
+        CSS.
       </p>
       <h3>The main essence of this tutorial is to:</h3>
       <ul>
@@ -34,13 +35,23 @@
       </ul>
       <div>
         <h4>
-          Next, I am going to add the following two numbers and display the result
-          , all with JavaScript
+          Next, I am going to add the following two numbers and display the
+          result, all with JavaScript
         </h4>
-        <p>First number:<span id="firstNum">2</span></p>
-        <p>Second number:<span id="secondNum">7</span></p>
         <p>
-          Therefore, the sum of the two of thse numbers is :
+          First number:
+          <input type="number" id="firstNum" placeholder="Enter first number" />
+        </p>
+        <p>
+          Second number:
+          <input
+            type="number"
+            id="secondNum"
+            placeholder="Enter second number"
+          />
+        </p>
+        <p>
+          Therefore, the sum of the two of these numbers is:
           <span id="answer"></span>
         </p>
         <input type="button" id="sumButton" value="Click to add!" />

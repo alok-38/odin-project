@@ -1,0 +1,14 @@
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+table {
+  max-width: 70%;
+  margin: 0 auto;
+  border: 3px solid purple;
+}
+
+tr,
+td {
+  padding: 20px;
+}

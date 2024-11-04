@@ -12,3 +12,8 @@ tr,
 td {
   padding: 20px;
 }
+
+img {
+  display: block;
+  margin: 25px auto 0 auto;
+}

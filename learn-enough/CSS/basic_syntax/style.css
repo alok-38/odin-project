@@ -8,6 +8,7 @@ body {
 .highlighted {
 	background-color: rgb(162, 67, 250);
 	color: #ffffff;
+	font-size: 1em;
 }
 
 a {
@@ -21,6 +22,7 @@ a:hover {
 
 h1 {
 	font-size: 2em;
+	border-bottom: 2px solid;
 }
 
 p {

@@ -29,3 +29,9 @@ console.log(developers[0].age);
 console.log(developers[0].languages[1]);
 console.log(developers[1].languages[1]);
 
+// Find method
+const myNumbers = [1, 2, 3, 4, 5];
+const foundMyNumbers = myNumbers.find((number) => number > 3);
+console.log(foundMyNumbers);
+
+

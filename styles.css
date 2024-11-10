@@ -1,0 +1,116 @@
+/* Universal reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Common styles */
+
+a {
+	text-decoration: none;
+}
+
+section a {
+	color: orange;
+	font-weight: bold;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+ol li,
+ul li {
+	margin-bottom: .5em;
+}
+
+body {
+	margin: 2em;
+	line-height: 1.2;
+	background-color: rgb(36, 34, 34);
+}
+
+header nav ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1em;
+}
+
+nav a {
+	color: aliceblue;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: 1em;
+	color: aliceblue;
+	padding-left: 25%;
+}
+
+main {
+	max-width: 50%;
+	margin: 0 auto;
+	background-color: rgb(228, 231, 234);
+	padding: 2em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+img {
+	display: block;
+	height: auto;
+}
+
+p {
+	margin-bottom: 2em;
+	line-height: 1.2;
+}
+
+/* end of common styles */
+
+.inline-elements,
+.inline-elements_h2 {
+	margin-top: 2em;
+}
+
+.block-elements__h2 {
+	margin-bottom: 1em;
+}
+
+/* table */
+table th {
+	padding-bottom: 2em;
+}
+
+tr {
+	line-height: 1.6;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 20px;
+}
+
+/* home page founders */
+.founders {
+	display: flex;
+	flex-direction: row;
+	padding: 1.5em;
+	gap: 50px;
+}
+
+.founders p {
+	line-height: 1.6;
+}
+
+.founders img {
+	display: block;
+	margin: 0 auto 15px auto;
+}
+

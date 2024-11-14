@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Variables and identifiers</title>
-  </head>
-  <body>
-    <script>
-      let firstName = "Michael";
-      let lastName = "Hartl";
-      let fullName = firstName + " " + lastName;
-      document.write(fullName);
-      document.write("<br>");
-      const city = "Bangalore";
-      const state = "Karnataka";
-      document.write(`I live in ${city} ${state}`);
-      document.write("<br>");
-      const myFirstName = "Alokananda";
-      const myLastName = "Y";
-      document.write(`My name is ${myFirstName} ${myLastName}`);
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variables and identifiers</title>
+</head>
+
+<body>
+  <script>
+    var a;
+    var b;
+    // or
+    var a_1, b_1;
+    // Assigning a value to the variable
+    a = 10;
+    console.log(a);
+    // For multiple variables
+    var variable_a = 10, variable_b = 20, variable_c = 30;
+    // There are different types of data we can store in variables.
+    var my_name = "Jenny";
+    var my_age = 25;
+    var is_active = true;
+    var colors = ["blue", "red"];
+    var person = { name: "Alok", age: 40 };
+    var nothing = undefined;
+    var another_nothing = null;
+    // DIFFERENCE BETWEEN VAR AND LET KEYWORD
+    // var variables have function scope
+    function getScores(score) {
+      if (score > 60) {
+        var bonus = 10;
+        console.log(score + bonus);
+      }
+      console.log(score);
+    }
+    getScores(70);
+  </script>
+</body>
+
 </html>

@@ -25,7 +25,18 @@
 			} else {
 				$('p').text(originalText);
 			}
-		})
+		});
+		let originalColor = $('p').css('color');
+		$('p').hover(function () {
+			let currentColor = $('p').css('color');
+			if (currentColor === originalColor) {
+				// Change color
+				$('p').css('color', 'orange');
+			} else {
+				$('p').css('color', originalColor);
+			}
+		}
+		)
 	</script>
 </body>
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery Basics</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<p>Initial text</p>
+	<button>Toggle text</button>
+	<script>
+		// Store the original text
+		let originalText = $('p').text();
+		$('button').click(function () {
+			let currentText = $('p').text();
+			// console.log(currentText);
+			// Toggle between original and updated text
+			if (currentText === originalText) {
+				// Update text
+				$('p').text("Hello from JQuery!");
+			} else {
+				$('p').text(originalText);
+			}
+		})
+	</script>
+</body>
+
+</html>

@@ -36,6 +36,61 @@
       console.log(score);
     }
     getScores(70);
+    // Improvement of the above function
+    function getScoresAgain(score) {
+      var bonus = 0;
+      if (score > 60) {
+        bonus = 10;
+      }
+      console.log(score + bonus);
+    }
+    getScoresAgain(70);
+    // Global object
+    var globalVar;
+    function getGlobalVar() {
+      globalVar = 60;
+      if (globalVar > 50) {
+        console.log("Good");
+      }
+    }
+    // Call the function to set globalVar first
+    getGlobalVar();
+    // Globalvar will now get logged
+    console.log(window.globalVar);
+    // Better approach (best practice)
+    function betterGlobalVar() {
+      let globalVar = 60;
+      if (globalVar > 50) {
+        console.log("Good");
+      }
+      return globalVar;
+    }
+    // Safe use of the return value
+    let safeGlobalVar = betterGlobalVar();
+    console.log(safeGlobalVar);
+    // REDECLARATION OF VAR VARIABLES:
+    function variableRedeclaration() {
+      var marks = 60;
+      if (marks > 60) {
+        var marks = 80;
+        console.log(marks);
+      }
+      var marks = 90;
+      console.log(marks);
+    }
+    variableRedeclaration();
+    // Let keyword - not hoisted
+    let num;
+    console.log(num);
+    // Scope of let variable
+    function getLetScores(letScore) {
+      if (letScore > 60) {
+        let letBonus = 10;
+        console.log(letScore + letBonus)
+      }
+      console.log(letBonus);
+    }
+    getLetScores(100);
   </script>
 </body>
 

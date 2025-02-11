@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize Challenge</title>
+</head>
+
+<body>
+    <script>
+        function capitalizeString(str, capitalizedLetter) {
+            if (str.length > 0) {
+                return capitalizedLetter + str.slice(1);
+            }
+            return str;
+        }
+        const myString = "developer";
+        const capitalize = myString[0].toUpperCase();
+        const capitalizedString = capitalizeString(myString, capitalize);
+        console.log(capitalizedString);
+
+    </script>
+</body>
+
+</html>

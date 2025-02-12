@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh
+}
+
+h1,
+input:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.5rem
+}

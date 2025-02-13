@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E9F2EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+main {
+    display: flex;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    font-size: 2rem;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    /* Set width */
+    height: 30px;
+    /* Set height */
+    appearance: none;
+    /* Removes the default styling */
+    border: 2px solid #000;
+    /* Add a border to make it look like a checkbox */
+    border-radius: 5px;
+    /* Optional: adds rounded corners */
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2714';
+    /* Unicode checkmark symbol */
+    font-size: 20px;
+    /* Adjust size of checkmark */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the checkmark */
+    color: white;
+    /* Checkmark color */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4caf50;
+    /* Change background color when checked */
+    border-color: #4caf50;
+    /* Optional: change the border color when checked */
+}

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #ffffff;
+    display: flex;
+    padding: 2.5rem;
+    outline: unset;
+    border-radius: 12px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    outline: unset;
+    border: unset;
+    background: transparent;
+    cursor: pointer;
+}
+
+button {
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 2.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin: 1.5rem 0;
+}
+
+button:hover {
+    background-color: indigo;
+    /* Change color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}
+
+button:active {
+    background-color: darkviolet;
+    /* Darken the button color on press */
+    transform: scale(0.98);
+    /* Slightly shrink the button on press */
+}
+
+label {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+input {
+    padding: 1rem 1.5rem;
+    border: 2px solid rebeccapurple;
+}
+
+
+li {
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

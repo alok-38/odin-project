@@ -8,71 +8,80 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    background-color: #E9F2EF;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
 }
 
 main {
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 2.5rem;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    color: #ffffff;
 }
 
 h1 {
     font-size: 2.5rem;
 }
 
-form {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-}
-
 label {
+    font-size: 1.5rem;
     margin-right: 5px;
 }
 
+button,
 input {
-    height: 45px;
-    padding-left: 1rem;
-    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
     outline: unset;
     border: unset;
-    background: transparent;
-    background-color: #E9F2EF;
-    opacity: .5;
-    font-size: 1.5rem;
+    height: 35px;
+    border: 2px #ff4e3b solid;
+    padding: 1rem 1.5rem;
+    border: 2px solid #ff4e3b;
+    color: #ffffff;
+    font-size: 24px;
 }
 
-input:focus,
-input:hover {
-    border: 2px solid rebeccapurple;
+input::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: .5;
 }
 
 button {
-    outline: unset;
-    border: unset;
-    padding: 1rem 1.5rem;
-    width: 50%;
-    display: block;
-    margin: auto;
+    /* Dark Coral border */
+    padding: 10px 20px;
+    background-color: transparent;
+    /* White font color */
+    font-size: 16px;
     cursor: pointer;
-    background: transparent;
-    background-color: blueviolet;
-    color: #ffffff;
+    transition: all 0.3s ease;
+    /* Smooth transition for all changes */
     border-radius: 5px;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    /* Optional: Adds rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
+/* Hover effect */
 button:hover {
-    background-color: rgb(110, 64, 155);
+    background-color: #ff4e3b;
+    /* Dark Coral background on hover */
+    color: #fff;
+    /* Keep the font color white */
+    transform: scale(1.05);
+    /* Slightly increase the size on hover */
 }
 
+/* Active (pressed) effect */
 button:active {
-    transform: scale(0.95);
-    /* Slightly shrinks the button when clicked */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Gives a slight shadow to create the "pressed" effect */
+    background-color: #e63846;
+    /* Slightly darker red on press */
+    border-color: #e63846;
+    /* Match the border to the background color */
+    transform: scale(0.98);
+    /* Slightly decrease the size when pressed */
 }

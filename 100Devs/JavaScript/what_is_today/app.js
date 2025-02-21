@@ -1,7 +1,9 @@
-document.querySelector("#check").addEventListener('click', check);
+const inputEl = document.querySelector('input');
+const butonEl = document.querySelector('button');
 
 function check() {
-    // Get user input and standerdize it
-    const dayInput = document.querySelector("#week").value.trim().toLowerCase();
-    const currentDay = new Date().toLocaleString('en-us')
+    const day = inputEl.value;
+    // Conditionals go here
 }
+
+butonEl.addEventListener('click', check);

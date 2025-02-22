@@ -84,28 +84,17 @@ input {
     border-radius: 5px;
     border: 2px solid transparent;
     transition: all 0.3s ease;
-    color: #ff944d;
+    color: black
 }
 
 input::placeholder {
     color: #ff944d;
 }
 
-input:hover {
-    border: 2px solid #ff944d;
-    background: #f7f1ec;
-}
 
 input:focus {
     border: 2px solid #43e6a5;
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
-    color: #fff;
-}
-
-input:active {
-    background: linear-gradient(45deg, #ff6b6b, #f0e130, #43e6a5, #f6c6ea, #ff944d);
-    border: 2px solid #ff6b6b;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -129,7 +118,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(45deg, #ff6b6b, #f0e130, #43e6a5, #f6c6ea, #ff944d);
+    background: rgba(255, 148, 77, 0.7);
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

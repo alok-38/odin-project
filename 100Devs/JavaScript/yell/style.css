@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #43f0bf, #b0c3d9);
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(30, 35, 39)
+}
+
+label {
+    margin-bottom: 5px;
+    color: rgb(30, 35, 39)
+}
+
+main {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+}
+
+input,
+button {
+    background: transparent;
+    outline: unset;
+    border: unset;
+    height: 45px;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #43f0bf;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #36e6a8;
+    /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow on hover */
+}
+
+button:focus {
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 0 3px #36e6a8;
+    /* Glow effect around button when focused */
+}
+
+button:active {
+    background-color: #2dc998;
+    /* Even darker green when button is pressed */
+    transform: translateY(2px);
+    /* Slight pressing effect */
+    box-shadow: none;
+    /* Remove shadow on press */
+}
+
+input {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #43f0bf;
+}
+
+input:hover {
+    border-color: #36e6a8;
+    /* Darker border color on hover */
+}
+
+input:focus {
+    outline: none;
+    /* Remove default outline */
+    border-color: #36e6a8;
+    /* Green border on focus */
+    box-shadow: 0 0 0 3px rgba(54, 230, 168, 0.5);
+    /* Subtle glow on focus */
+}

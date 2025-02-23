@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contains Duplicate</title>
+</head>
+
+<body>
+    <script>
+        function hasDuplicates(array) {
+            // Create a new Set
+            let hashSet = new Set();
+
+            // Iterate through each element in the array
+            for (let i = 0; i < array.length; i++) {
+                const element = array[i];
+
+                // Check if the element is already in the set
+                if (hashSet.has(element)) {
+                    return true; // Duplicate found
+                }
+
+                // Add the element to the set
+                hashSet.add(element);
+            }
+
+            // If no duplicates found
+            return false;
+        }
+
+        // Example usage
+        let array = [1, 2, 3, 4, 5, 2];
+        console.log(hasDuplicates(array)); // true
+
+        let array2 = [1, 2, 3, 4, 5];
+        console.log(hasDuplicates(array2)); // false
+    </script>
+</body>
+
+</html>

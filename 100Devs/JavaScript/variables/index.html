@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+        const variable1 = 10;
+        const variable2 = 11;
+        const h1El = document.querySelector('h1');
+
+        // This function should return the sum or update something when clicked
+        function add() {
+            h1El.textContent = variable1 + variable2;  // Update the text of h1
+        }
+
+        // Set the initial text content
+        h1El.textContent = variable1 + variable2;
+
+        // Add event listener to the h1 element
+        h1El.addEventListener('click', add);
+
+    </script>
+</body>
+
+</html>

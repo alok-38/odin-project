@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        function repeatWord(word, num) {
+            if (num <= 0) {
+                return ''; // If number is 0 or negative, return an empty string
+            }
+            return word.repeat(num); // Repeat the word 'num' times
+        }
+
+        // Example usage:
+        console.log(repeatWord("hello", 3)); // Outputs: "hellohellohello"
+        console.log(repeatWord("hello", 10)); // Outputs: "hellohellohello"
+        console.log(repeatWord("hello", 0)); // Outputs: "hellohellohello"
+
+    </script>
+</body>
+
+</html>

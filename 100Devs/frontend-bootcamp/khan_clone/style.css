@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+select {
+    outline: unset;
+    border: unset;
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}

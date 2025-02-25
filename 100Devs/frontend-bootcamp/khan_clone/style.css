@@ -13,8 +13,39 @@ select {
     border: unset;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav div:first-of-type {
+    position: relative;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.fas {
+    position: absolute;
+    left: 10px;
+    top: 5%;
+    pointer-events: none;
+}
+
 nav img {
     height: 50px;
     width: 50px;
     object-fit: cover;
+}
+
+nav div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
 }

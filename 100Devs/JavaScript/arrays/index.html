@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        const movies = ["Die hard", "Rambo", "Wall street", "Pirates of the silicon valley"]
+        const firstMovie = movies[0];
+        const arrayLength = movies.length;
+        const lastMovie = movies[movies.length - 1];
+        const bestColors = ["yellow", "blue", "green", "orange"];
+        bestColors.forEach((color, index) => console.log(index + 1, color));
+        movies.forEach((movie) => {
+            const h2El = document.createElement('h2');
+            h2El.textContent = movie;
+            document.body.appendChild(h2El);
+        });
+        const integers = [45, -5, 8, 78, 0, 2];
+        const result = integers.map(num => {
+            // check if the number is odd
+            if (num % 2 !== 0) {
+                return num + 3;
+            }
+        })
+        console.log(result);
+        const average = integers.reduce((sum, num) => sum + num, 0) / integers.length;
+        console.log(average);
+        
+    </script>
+</body>
+
+</html>

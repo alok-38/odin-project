@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+
+<body>
+    <script>
+        let rows = prompt("How many rows?");
+        rows = parseInt(rows);  // Ensure the input is converted to a number
+
+        for (let i = 1; i <= rows; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write(`#`);  // Prints the number i, i times
+            }
+            document.write("<br>");  // After each row, go to the next line
+        }
+        // Left facing triangle
+        let numberOfRows = prompt("How many rows?");
+        numberOfRows = parseInt(numberOfRows);
+
+        for (let i = 1; i <= numberOfRows; i++) {
+            // Print the #'s in each row
+            for (let j = 1; j <= i; j++) {
+                document.write("#");
+            }
+            document.write("<br>");
+        }
+
+
+    </script>
+</body>
+
+</html>

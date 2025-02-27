@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const favoriteDrink = "MuskMellonJuice";
+        console.log(favoriteDrink);
+
+        // multiple words
+        const multipleWords = ["apple", "mellon", "grapes", "orange", "tomato"]
+        if (multipleWords.includes("apple")) {
+            console.log("apple is found!");
+        } else {
+            console.log("It's not there");
+        }
+
+
+        // Array of rock paper and scissors
+        const words = ["rock", "paper", "scissors"];
+        // Random rock paper and scissor
+        function randomRockPaperScissor() {
+
+            const randomNumber = Math.floor(Math.random() * words.length);
+            const randomWord = words[randomNumber];
+            return randomWord;
+        }
+        console.log(randomRockPaperScissor());
+
+
+        // Conditionals
+        function rockPaperScissorsChoice(playerChoice) {
+            if (!words.includes(playerChoice)) {
+                return "Invalid choice! Please choose 'rock', 'paper', or 'scissors'.";
+            }
+            // Get a random choice for the computer
+            const wordsForTheBot = ["rock", "paper", "scissors"];
+            const randomNumber = Math.floor(Math.random() * words.length);
+            const computerChoice = wordsForTheBot[randomNumber];
+            // Compare the choices and determine the winner
+            if (playerChoice === computerChoice) {
+                return `It's a tie! Both chose ${playerChoice}.`;
+            }
+
+            if (
+                (playerChoice === "rock" && computerChoice === "scissors") ||
+                (playerChoice === "paper" && computerChoice === "rock") ||
+                (playerChoice === "scissors" && computerChoice === "paper")
+            ) {
+                return `You win! ${playerChoice} beats ${computerChoice}.`;
+            } else {
+                return `You lose! ${computerChoice} beats ${playerChoice}.`;
+            }
+        }
+        console.log(rockPaperScissorsChoice("rock"));
+        console.log(rockPaperScissorsChoice("paper"));
+        console.log(rockPaperScissorsChoice("scissors"));
+        console.log(rockPaperScissorsChoice("spock"));
+
+        // Array of choices
+        function playTheGame(choices) {
+            // Ensure the choices is not empty
+            if (choices.length === 0) {
+                return "No choices available!";
+            }
+            // Generate a random index between 0 and the length of the choices array
+            const randomIndex = Math.floor(Math.random() * choices.length);
+
+            // Return the randomly selected choice
+            return choices[randomIndex];
+
+        }
+
+        const choices = ["apple", "banana", "orange", "grape"];
+        const selectedChoice = playTheGame(choices);
+        console.log("The randomly selected choice is:", selectedChoice);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+nav div:first-of-type div:nth-child(1) img {
+    width: 16px;
+    height: 16px;
+}
+
+nav div:first-of-type div:nth-child(2) img {
+    width: 24px;
+    height: 24px;
+}

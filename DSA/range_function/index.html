@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range function</title>
+</head>
+
+<body>
+    <script>
+        function range(start, end) {
+            let result = [];
+            if (start > end) {
+                return result;
+            } else {
+                for (let i = start; i <= end; i++) {
+                    result.push(i);
+                }
+                return result;
+            }
+        }
+        console.log(range(1, 5));
+        console.log(range(3, 7));
+        console.log(range(5, 5));
+        console.log(range(7, 3));
+
+    </script>
+</body>
+
+</html>

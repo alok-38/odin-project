@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted Square</title>
+</head>
+
+<body>
+    <script>
+        function sortedSquaredArray(array) {
+            // Write your code here.
+            let sortedArray = array.sort((a, b) => a - b);
+            // Square the sorted array
+            let squaredSortedArray = sortedArray.map(element => element * element);
+            //  Now sort this again
+            let sortThisAgain = squaredSortedArray.sort((a, b) => a - b);
+            return sortThisAgain;
+        }
+    </script>
+</body>
+
+</html>

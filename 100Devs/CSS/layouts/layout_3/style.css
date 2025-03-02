@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: calc(100vh - 35vh);
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+section:not(:nth-child(2)) {
+    width: 50%;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+section:nth-child(2) {
+    width: 100%;
+}

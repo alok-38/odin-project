@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        function calculator(a, b, sign) {
+            switch (sign) {
+                case '+':
+                    return a + b;
+                    break;
+                case '-':
+                    return a - b;
+                    break;
+                case '/':
+                    if (b === 0) {
+                        return `Error! Division by zero!`;
+                    } else {
+                        return a / b;
+                    }
+                    break;
+                case '*':
+                    return a * b;
+                    break;
+                default:
+                    return `Error! Invalid operator: ${sign}`;
+            }
+        }
+        console.log(calculator(1, 2, '+'));
+        console.log(calculator(10, 5, '-'));
+        console.log(calculator(2, 2, '*'));
+        console.log(calculator(10, 5, '/'));
+        console.log(calculator(10, 5, '@'));
+        console.log(calculator(10, 0, '/'));
+    </script>
+</body>
+
+</html>

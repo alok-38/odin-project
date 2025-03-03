@@ -69,7 +69,154 @@ h6 {
     isolation: isolate;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* button */
+button {
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border-radius: 0px;
+    border: 0px;
+    font-family: inherit;
+    color: inherit;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(230, 232, 234);
+    z-index: 4000;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 16px;
+}
+
 header .bbc svg {
     height: 30px;
     width: auto;
+}
+
+header div:first-of-type {
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: start;
+}
+
+header div:first-of-type svg {
+    cursor: pointer;
+    height: 32px;
+}
+
+header div:first-of-type svg:last-of-type {
+    margin-left: 16px;
+}
+
+header .bbc {
+    flex: 1 1 0%;
+    height: 32px;
+}
+
+header .btn {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    height: 32px;
+}
+
+header .btn button {
+    text-decoration: none;
+    cursor: pointer;
+    color: unset;
+    border: 2px solid transparent;
+    outline: transparent solid 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 9.3px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+header .btn button:first-of-type {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    outline-color: rgb(0, 0, 0);
+}
+
+header .btn button:first-of-type:hover {
+    background-color: #3A3C3E;
+}
+
+header .btn button:last-of-type {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+header .btn button:last-of-type:hover {
+    background-color: rgb(58, 60, 62);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(58, 60, 62);
+    outline: rgb(58, 60, 62) solid 2px;
+}
+
+/* nav */
+nav {
+    z-index: 3000;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    top: 65.6667px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid rgb(230, 232, 234);
+}
+
+nav ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+    margin-left: 26%;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 12px 8px;
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #E6E8EA;
+}
+
+nav ul li:first-of-type a {
+    border-bottom: 4px solid rgb(0, 0, 0);
 }

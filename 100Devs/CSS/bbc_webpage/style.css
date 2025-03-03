@@ -220,3 +220,11 @@ nav ul li a:hover {
 nav ul li:first-of-type a {
     border-bottom: 4px solid rgb(0, 0, 0);
 }
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 12px 16px;
+    gap: 16px;
+}

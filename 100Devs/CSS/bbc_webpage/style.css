@@ -1,108 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
+/* From https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+/* 2. Remove default margin */
+* {
+    margin: 0;
 }
 
-main div {
-    width: 350px;
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
 }
 
-header {
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 65px;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(230, 232, 234);
-    z-index: 4000;
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
 }
 
-.sc-735e4804-0 {
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+header .bbc svg {
     height: 30px;
     width: auto;
-}
-
-header div {
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding: 12px 16px;
-    justify-content: space-between;
-}
-
-nav {
-    z-index: 3000;
-    position: sticky;
-    background-color: rgb(255, 255, 255);
-    top: 65.6667px;
-    left: 0px;
-    right: 0px;
-    border-bottom: 1px solid rgb(230, 232, 234);
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    align-self: center;
-    justify-content: center;
-}
-
-nav ul li a {
-    cursor: pointer;
-    padding: 12px 8px;
-    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-nav ul li:first-of-type a {
-    border-bottom: 4px solid rgb(0, 0, 0);
-}
-
-nav ul li a:hover {
-    background-color: #E6E8EA;
-}
-
-main {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Create three equal-width columns */
-    margin: 16px auto;
-    gap: 16px;
-    max-width: 1280px;
-    width: 100%;
-}
-
-
-main div div img {
-    width: 25vw;
-    height: auto;
-    object-fit: cover;
-}
-
-.center {
-    margin-left: 5px;
-}
-
-.center img {
-    width: 28vw;
-}
-
-main div:nth-of-type(3) {
-    margin-left: auto;
 }

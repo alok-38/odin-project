@@ -221,10 +221,186 @@ nav ul li:first-of-type a {
     border-bottom: 4px solid rgb(0, 0, 0);
 }
 
+/* img */
+
+img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 /* main */
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    margin: 12px 16px;
+    margin: 12px auto;
     gap: 16px;
+    max-width: 1280px;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    max-width: 1279px;
+}
+
+main section .left div {
+    display: grid;
+    border-bottom: 1px solid rgb(230, 232, 234);
+    grid-template-columns: 1fr;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 12px;
+    padding-bottom: 4px;
+}
+
+main section .left div .card-description {
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: rgb(32, 34, 36);
+    margin-bottom: 4px;
+    display: block;
+}
+
+h2 {
+    color: rgb(32, 34, 36);
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.36px;
+    width: 100%;
+}
+
+span {
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.12px;
+    color: rgb(84, 86, 88);
+}
+
+section .center div:nth-child(2) {
+    gap: 12px;
+    display: grid;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+section .center .live {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+section .center .live span {
+    font-size: 24px;
+    color: red;
+}
+
+aside {
+    border-bottom: 1px solid rgb(230, 232, 234);
+    position: relative;
+    gap: 8px;
+    display: grid;
+}
+
+section .center p,
+aside p {
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: rgb(32, 34, 36);
+    margin-bottom: 4px;
+}
+
+aside .video div svg {
+    color: rgb(32, 34, 36);
+    align-items: center;
+    padding-left: 2px;
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+        background-color: lightblue;
+    }
+
+    main {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+
+    .center {
+        width: 90%;
+    }
+
+    section {
+        width: 80%;
+        padding: 2.5rem;
+        display: flex;
+    }
+
+    .left {
+        margin-right: 50px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    aside {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+
+    body {
+        background-color: lightgreen;
+        overflow: hidden;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    section .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin: auto;
+    }
+
+
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Occurances</title>
+</head>
+
+<body>
+    <script>
+        function countOccurrences(aString, aChar) {
+            let count = 0;
+            aString = aString.toLowerCase();
+            aChar = aChar.toLowerCase();
+            for (let i = 0; i < aString.length; i++) {
+                if (aString[i] === aChar) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        countOccurrences("Hello", "l");
+        countOccurrences("hello", "l");
+        countOccurrences("hello", "z");
+        countOccurrences("alok", "k");
+    </script>
+</body>
+
+</html>

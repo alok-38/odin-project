@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <input type="text">
+    <button>Alert</button>
+    <script>
+        let aNumber = 45;
+        console.log(aNumber - 10);
+        const inputEl = document.querySelector('input');
+        const buttonEl = document.querySelector('button');
+
+        buttonEl.addEventListener('click', function () {
+            // Get the value of the input and parse it as an integer
+            let inputValue = parseInt(inputEl.value);
+
+            // Display the value in an alert
+            alert(inputValue + 25);
+
+            // Clear the input value
+            inputEl.value = "";
+        });
+
+        const h1El = document.createElement('h1');
+        let num1 = 5; // Example value for num1
+        let num2 = 10; // Example value for num2
+
+        // Set initial content of h1 element
+        h1El.textContent = "Click me to add numbers";
+
+        // Add click event listener
+        h1El.addEventListener('click', function () {
+            let result = num1 + num2;
+            h1El.textContent = `Result: ${result}`; // Update text content to show the result
+        });
+
+        // Append h1 to the document body
+        document.body.appendChild(h1El);
+
+    </script>
+</body>
+
+</html>

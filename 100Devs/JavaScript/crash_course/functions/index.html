@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        function subtractTwo(num1, num2) {
+            const difference = num1 - num2;
+            alert(difference);
+        }
+        subtractTwo(1, 1);
+        // quotient
+        function quotientFunction(dividend, divisor) {
+            if (divisor === 0) {
+                return undefined;  // Return undefined when divisor is 0
+            } else {
+                let quotient = dividend / divisor;  // Calculate quotient locally
+                return quotient;
+            }
+        }
+
+        console.log(quotientFunction(25, 500));  // Output: 0.05
+        // multiplcation
+        function multiplyThree(num1, num2, num3) {
+            return num1 * num2 * num3;
+        }
+        console.log(multiplyThree(2, 3, 5));
+        // Medium
+        function threeNumbers(num1, num2, num3) {
+            let addTwo = num1 + num2;
+            let remainder = addTwo / num3;
+            return remainder;
+        }
+        console.log(threeNumbers(45, 56, 78));
+        // Hard
+        function fourNumbers(num1, num2, num3, num4) {
+            let multipleFirstTwo = num1 * num2;
+            let lastTwoSum = num3 + num4;
+            let lastTwoDifference = num3 - num4;
+            let remainder = (num1 * num2 * num3) % num4;
+            if (multipleFirstTwo > 100) {
+                console.log(lastTwoSum);
+            } else if (multipleFirstTwo < 100) {
+                console.log(lastTwoDifference);
+            } else if (multipleFirstTwo === 100) {
+                console.log(remainder);
+            }
+        }
+        fourNumbers(1, 2, 3, 4);
+        fourNumbers(45, 56, 78, 89);
+    </script>
+</body>
+
+</html>

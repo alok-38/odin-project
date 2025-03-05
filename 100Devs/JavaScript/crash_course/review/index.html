@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function returnRemainder(value_1, value_2) {
+            return value_1 % value_2;
+        }
+        console.log(parseFloat((1, 2)));
+        function conditional(number_1, number_2) {
+            let sum = number_1 + number_2;
+            if (sum > 50) {
+                alert("Jumanji!");
+            } else {
+                alert(sum);
+            }
+        }
+        conditional(4, 45);
+        function conditionThree(number_1, number_2, number_3) {
+            let product = number_1 * number_2 * number_3;
+            if (product % 3 === 0) {
+                alert("Zebra");
+            } else {
+                alert("Cool");
+            }
+        }
+        conditionThree(45, 78, 9);
+        function wordNumber(word, number) {
+            for (let i = 0; i < number; i++) {
+                document.write(`${i + 1} ${word}<br>`);
+            }
+        }
+        wordNumber("Alok", 40);
+    </script>
+</body>
+
+</html>

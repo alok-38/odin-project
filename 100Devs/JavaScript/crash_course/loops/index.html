@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        for (let index = 3; index < 7; index++) {
+            console.log(index);
+        }
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i += 2;
+        }
+
+        for (let j = 2; j < 10; j += 3) {
+            console.log(j);
+        }
+        function loop() {
+            for (let i = 0; i < 21; i++) {
+                document.write(`${i + 1} &nbsp; 21<br>`);
+            }
+        }
+        loop();
+        let a = 1
+        while (a < 10) {
+            console.log(a);
+            a *= 2;
+        }
+        for (let b = 1; b < 6; b++) {
+            if (b % 2 === 0) {
+                continue;
+            }
+            console.log(b);
+        }
+    </script>
+</body>
+
+</html>

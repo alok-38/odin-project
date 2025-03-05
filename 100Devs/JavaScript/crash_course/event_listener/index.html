@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="finalRose">Final Rose</h1>
+    </header>
+    <section>
+        <div class="images-container">
+            <img id="claire" src="microsoft-365-bWL-c09Ys80-unsplash.jpg" alt="">
+            <img id="nikki" src="microsoft-365-d3nKNw1ILdM-unsplash.jpg" alt="">
+            <img style="height: 167px;" id="sharleen" src="sepehr-sajjadieh-TncpX6PiAQU-unsplash.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        const h1El = document.querySelector("#finalRose");
+        const claireEl = document.querySelector("#claire");
+        const nikkiEl = document.querySelector("#nikki");
+        const sharleenEl = document.querySelector("#sharleen");
+
+        const allWomen = document.querySelectorAll("img"); // All image elements
+
+        // Function to hide images when clicked
+        function hideImage(imageEl) {
+            imageEl.style.display = 'none';
+        }
+
+        // Function to show images with display flex when h1 is clicked
+        function showImages() {
+            allWomen.forEach(img => {
+                img.style.display = 'flex'; // Set display to flex to show images
+            });
+        }
+
+        // Add click event listener to each image
+        allWomen.forEach(img => {
+            img.addEventListener('click', function () {
+                hideImage(img); // Hide the clicked image
+            });
+        });
+
+        // Add click event listener to the h1 element to show all images
+        h1El.addEventListener('click', showImages);
+
+
+
+    </script>
+</body>
+
+</html>

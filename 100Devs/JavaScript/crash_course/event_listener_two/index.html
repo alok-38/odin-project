@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="finalRose">The next Bachelorette should have been:</h1>
+    </header>
+    <section>
+        <h2 id="claireH2">claire</h2>
+        <h2 id="nikkiH2">nikki</h2>
+        <h2 id="sharleenH2">sharleen</h2>
+    </section>
+    <section>
+        <div class="images-container">
+            <img id="claireImg" src="microsoft-365-bWL-c09Ys80-unsplash.jpg" alt="">
+            <img id="nikkiImg" src="microsoft-365-d3nKNw1ILdM-unsplash.jpg" alt="">
+            <img style="height: 167px;" id="sharleenImg" src="sepehr-sajjadieh-TncpX6PiAQU-unsplash.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        const h1El = document.querySelector("#finalRose");
+        const claireEl = document.querySelector("#claireImg");
+        const nikkiEl = document.querySelector("#nikkiImg");
+        const sharleenEl = document.querySelector("#sharleenImg");
+        const claireH2 = document.querySelector("#claireH2");
+        const nikkiH2 = document.querySelector("#nikkiH2");
+        const sharleenH2 = document.querySelector("#sharleenH2");
+
+        const allWomen = document.querySelectorAll("img");
+
+        function hideImages() {
+            allWomen.forEach(img => {
+                img.style.display = "none";
+            });
+        }
+
+        // Add click event listener to the h1 element to hide all images
+        h1El.addEventListener('click', hideImages);
+
+        function showImage(image) {
+            // First, hide all images
+            hideImages();
+            // Then, display the selected image
+            image.style.display = "flex";
+        }
+
+        // Add click event listeners to the images you want to show
+        claireH2.addEventListener('click', () => showImage(claireEl));
+        nikkiH2.addEventListener('click', () => showImage(nikkiEl));
+        sharleenH2.addEventListener('click', () => showImage(sharleenEl));
+    </script>
+</body>
+
+</html>

@@ -53,6 +53,17 @@
         }
         fourNumbers(1, 2, 3, 4);
         fourNumbers(45, 56, 78, 89);
+        // Temperature converter
+        function celsiusToFahrenheit(celsius) {
+            let fahrenheit = (celsius * (9 / 5)) + 32;
+            return fahrenheit;
+        }
+        let celsiusTemp = 25;
+        let celsiusTemp1 = 0;
+        let fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+        console.log(`${celsiusTemp}°C is equal to ${fahrenheitTemp}°F`);
+        console.log(`${celsiusTemp1}°C is equal to ${fahrenheitTemp}°F`);
+
     </script>
 </body>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move an element of an array to the end</title>
+</head>
+
+<body>
+    <script>
+        function moveElementToTheEnd(array, element) {
+            const indexToBeMoved = array.indexOf(element);
+
+            // Check if the element is found in the array
+            if (indexToBeMoved !== -1) {
+                // Remove the element from its current position
+                array.splice(indexToBeMoved, 1);
+
+                // Append the element to the end of the array
+                array.push(element);
+            }
+        }
+        let myArray = [10, 20, 30, 40, 50];
+        moveElementToTheEnd(myArray, 30);
+        console.log(myArray);
+
+    </script>
+</body>
+
+</html>

@@ -42,6 +42,27 @@
         console.log(name);  // Outputs: "Bob"
         console.log(age);   // Outputs: 35
 
+        // Nested objects
+        let employee = {
+            name: "Tom",
+            job: {
+                title: "Developer",
+                department: "Engineering"
+            }
+        };
+
+        console.log(employee.job.title);
+
+        // Object Methods
+        let car = {
+            make: "Toyota",
+            model: "Corolla",
+            displayInfo: function () {
+                return `${this.make} ${this.model}`;
+            }
+        };
+        console.log(car.displayInfo());
+
     </script>
 </body>
 

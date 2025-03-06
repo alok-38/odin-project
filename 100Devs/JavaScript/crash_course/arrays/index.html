@@ -45,6 +45,15 @@
         const numbers_unfiltered = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         const evenNumbers = numbers_unfiltered.filter((number) => number % 2 === 0);
         console.log(evenNumbers);
+        // without using map or filter
+        function withoutMapOrFilter(numbers_unfiltered) {
+            let evens = [];
+            if (numbers_unfiltered % 2 === 0) {
+                return numbers_unfiltered.push(evens);
+
+            }
+        }
+        withoutMapOrFilter(numbers_unfiltered);
     </script>
 </body>
 

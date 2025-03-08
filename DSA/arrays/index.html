@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        const fruits = ["apple|", "banana", "cherry", "data"];
+        // print the second element
+        console.log(fruits[1]);
+        // Add an item to the end
+        fruits.push("elderberry");
+        // Remove the first element
+        fruits.shift("apple");
+        console.log(fruits);
+        // creating and looping through the numbers array
+        const numbers = [5, 10, 15, 20, 25];
+        for (let i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+        // Array methods
+        const ages = [12, 15, 19, 22, 30];
+        const olderByOne = ages.map((age) => age + 1);
+        console.log(olderByOne);
+        // greater than or equal to 18
+        const eighteenOrEqual = ages.filter((age) => age >= 18);
+        console.log(eighteenOrEqual);
+        // sorting using the sort method
+        const scores = [85, 72, 98, 56, 91];
+        const sortedArray = scores.sort();
+        console.log(sortedArray);
+        // without the sort method
+        // Bubble sort
+        function bubbleSort(scores) {
+            let length = scores.length;
+            let swapped;
+            
+        }
+    </script>
+</body>
+
+</html>

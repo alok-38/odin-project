@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inria Sans", sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 4px solid turquoise;
+    width: fit-content;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem;
+    font-size: 2.75rem;
+}
+
+main {
+    width: 640px;
+    background-color: #ffffff;
+    box-shadow: 4px 2px 12px 4px #b5b3b3;
+}
+
+img {
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    max-width: 100px;
+}
+
+.arrows {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 15px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    outline: unset;
+    border: unset;
+    background: transparent;
+    border: 1px solid turquoise;
+    background-color: rgb(231, 245, 243);
+    padding: .25rem .5rem;
+    border-radius: 12.5px;
+    font-size: .75rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    /* Smooth transition for all states */
+}
+
+button:hover {
+    background-color: #a4f7d6;
+    /* Change background on hover */
+    border-color: #47d7b6;
+    /* Change border color on hover */
+}
+
+button:focus {
+    outline: 2px solid #47d7b6;
+    /* Add outline for focus */
+    outline-offset: 2px;
+    /* Space between button and focus outline */
+}
+
+button:active {
+    background-color: #66e6d7;
+    /* Darker background when the button is active */
+    border-color: #2bc29f;
+    /* Darker border when the button is active */
+    transform: scale(0.98);
+    /* Slightly shrink the button on click */
+}
+
+button:focus-visible {
+    outline: 2px solid turquoise;
+    /* Make focus visible */
+}

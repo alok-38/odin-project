@@ -4,25 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Item Lister</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Item Lister</h1>
-    </header>
-    <main>
-      <h2>Add Items</h2>
-      <div>
-        <input type="text" />
-        <button>Submit</button>
-      </div>
-      <h3>Items</h3>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-      </ul>
-    </main>
+    <div class="wrapper">
+      <header>
+        <h1>Item Lister</h1>
+        <input type="search" name="" id="" placeholder="Search Items" />
+      </header>
+      <main>
+        <h2>Add Items</h2>
+        <div>
+          <input type="text" />
+          <button type="submit">Submit</button>
+        </div>
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              ,
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              ,
+              fill="#EA3323"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>

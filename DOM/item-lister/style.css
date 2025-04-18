@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(120, 82%, 45%);
+    padding: 2.5rem 0 2.5rem 33.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+main {
+    border-radius: 8px;
+    border: 1px solid hsl(240, 2%, 69%);
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem auto 0 auto;
+    padding: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+div {
+    display: flex;
+    gap: 15px;
+}
+
+input,
+button {
+    height: 40px;
+    padding: 1rem;
+    border: unset;
+    outline: unset;
+    border-radius: 2.5px;
+    border: 1px solid hsl(240, 2%, 69%);
+    cursor: pointer;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    background: transparent;
+    background-color: black;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: hsl(0, 8%, 5%);
+
+}
+
+input:hover,
+button:hover {
+    outline: 2px solid hsl(240, 2%, 69%);
+}
+
+input {
+    width: 100%;
+}
+
+ul {
+    max-width: 100%;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+li {
+    height: 50px;
+    border-bottom: .5px solid hsl(240, 2%, 69%);
+    padding: 1rem;
+    border: .5px solid hsl(240, 2%, 69%);
+    margin-bottom: 5px;
+}

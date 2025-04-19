@@ -20,7 +20,7 @@ function addItem() {
     svg.setAttribute('width', '24px');
     svg.setAttribute('viewBox', '0 -960 960 960');
     svg.setAttribute('fill', '#EA3323');
-    svg.style.cursor = 'pointer'; 
+    svg.style.cursor = 'pointer';
 
     // Create <path> inside SVG
     const path = document.createElementNS(svgNS, 'path');
@@ -46,3 +46,31 @@ function addItem() {
 
 
 buttonEl.addEventListener('click', addItem);
+
+mainInputEl.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        addItem();
+    }
+});
+
+// filter function
+function filterItems() {
+    let headerInputItem = headerInputEl.value.toLowerCase();
+    let liItems = document.querySelectorAll('li');
+    let visibleCount = 0;
+
+    liItems.forEach(function (item) {
+        let itemName = item.firstChild.textContent.toLowerCase();
+
+        if (itemName.includes(headerInputItem)) {
+            item.style.display = 'flex';
+            visibleCount++;
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+}
+
+
+headerInputEl.addEventListener('keyup', filterItems);

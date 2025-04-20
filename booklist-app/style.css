@@ -58,6 +58,21 @@ input:active {
 
 }
 
+.btn-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+button:last-of-type {
+    background-color: #f04124;
+}
+
+button:last-of-type:hover {
+    background-color: #f15539;
+}
+
 button {
     background-color: #008cba;
     outline: unset;
@@ -73,6 +88,7 @@ button {
     justify-content: center;
     margin-top: 15px;
     font-size: 1.25rem;
+    width: 48%;
 }
 
 button:hover,
@@ -84,4 +100,26 @@ button:focus {
 button:active {
     transform: scale(0.96);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    margin-top: 25px;
+    width: 100%;
+}
+
+th,
+td {
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    color: #008cba;
 }

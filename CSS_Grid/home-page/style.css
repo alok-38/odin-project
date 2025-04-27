@@ -7,47 +7,46 @@
 body {
     font-family: "Special Gothic", sans-serif;
     margin: 1rem;
-}
-
-.grid-container>div {
-    background-color: #eee;
-    padding: 1em;
-}
-
-.grid-container>div:nth-child(odd) {
-    background-color: #ddd;
-}
-
-.grid-container {
+    line-height: 1.5;
+    font-size: 16px;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    gap: 1em;
+    grid-template-areas:
+        "header header header"
+        "nav content sidebar"
+        "nav footer footer"
+    ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
 }
 
-
-ul {
-    list-style-type: none;
+header,
+footer,
+main,
+aside,
+nav {
+    background-color: steelblue;
+    color: #ffffff;
+    padding: 20px;
+    border: skyblue 1px solid;
 }
 
-a {
-    text-decoration: none;
+header {
+    grid-area: header;
 }
 
-.box1 {
-    align-self: start;
+nav {
+    grid-area: nav;
 }
 
-.box2 {
-    align-self: end;
+main {
+    grid-area: content;
 }
 
-.box3 {
-    justify-self: end;
+aside {
+    grid-area: sidebar;
 }
 
-.box4 {}
-
-@media (max-width: 1120px) {}
-
-@media (max-width: 580px) {}
+footer {
+    grid-area: footer;
+}

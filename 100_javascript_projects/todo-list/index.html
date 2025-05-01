@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="icon" href="https://fav.farm/👓" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Todo List</h1>
+      <form>
+        <label for="task">Tasks</label>
+        <div>
+          <input
+            autofocus
+            type="text"
+            id="todo-input"
+            placeholder="Enter Task"
+          />
+          <button id="myButton">
+            <span class="btn-text">ADD</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#ffffff"
+              >
+                <path
+                  d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </form>
+      <ul></ul>
+    </main>
+  </body>
+</html>

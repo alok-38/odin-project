@@ -36,3 +36,19 @@ To run the app locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/todo-list.git
    ```
+
+2. Navigate into the project directory:
+   ```cd todo-list```
+
+3. Open ```index.html``` in your browser to run the app.
+
+4. Contributing
+
+Feel free to fork the repository and submit a pull request if you'd like to contribute to the app! Suggestions and improvements are always welcome.
+
+5. License
+This project is open-source and available under the MIT License.
+
+6. Contact
+Created by - [ Alokananda Y](https://github.com/alok-38/odin-project/tree/main/100_javascript_projects/todo-list)
+

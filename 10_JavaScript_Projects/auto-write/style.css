@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    background-color: rgb(21, 19, 19);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-bottom: 25px;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: rgb(34, 32, 32);
+}
+
+/* Focus effect (e.g., tab focus) */
+button:focus {
+    box-shadow: 0 0 0 2px #ffffff50;
+}
+
+/* Pressed (active) effect */
+button:active {
+    transform: scale(0.97);
+    background-color: rgb(15, 14, 14);
+}

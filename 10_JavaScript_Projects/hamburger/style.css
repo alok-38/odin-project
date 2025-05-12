@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 3rem;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(9, 2, 15);
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: rgb(30, 20, 40);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(100, 100, 255, 0.5);
+}
+
+button:active {
+    transform: scale(0.97);
+    background-color: rgb(20, 10, 30);
+}
+
+
+nav {
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+nav.active {
+    transform: translateX(0px);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 2rem 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s, background-color 0.3s;
+    width: 100%;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffcc00;
+    /* or any highlight color */
+    background-color: #333;
+    /* optional background */
+    outline: none;
+}
+
+nav a:active {
+    color: #ff6600;
+    /* deeper color on click */
+    background-color: #222;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.overlay.active {
+    opacity: .5;
+    pointer-events: auto;
+}

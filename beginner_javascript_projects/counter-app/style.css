@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: linear-gradient(to right, #232222, #000e07);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 125px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: 2px solid #ffffffaa;
+    outline-offset: 4px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+span {
+    color: #000e07;
+    font-size: 7rem;
+}

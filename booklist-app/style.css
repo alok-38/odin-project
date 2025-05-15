@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    max-width: 840px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.fa-book-open,
+span {
+    color: #008CBA;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 3.25rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+input,
+button {
+    height: 40px;
+    padding: 1rem;
+    cursor: pointer;
+    background: transparent;
+    outline: unset;
+    border: unset;
+    border: .5px solid;
+    transition: all 0.2s ease;
+    font-size: 1.5rem;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:focus {
+    border-color: #007BFF;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #008CBA;
+    color: #ffffff;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #0056b3;
+}
+
+input:focus {
+    outline: 2px solid #008CBA;
+}
+
+button:hover {
+    background-color: #008CBA;
+}
+
+table {
+    margin-top: 15px;
+    border: 1px solid #008CBA;
+    border-collapse: collapse;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 340px) {
+
+    form input,
+    form button {
+        width: 100%;
+    }
+
+    table {
+        display: flex;
+        flex-direction: column;
+    }
+}

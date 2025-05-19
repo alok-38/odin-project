@@ -25,15 +25,15 @@
       <header>
         <h1><i class="fas fa-book-open"></i> My<span>Book</span>List</h1>
       </header>
-
+      <div id="error"></div>
       <form>
         <label for="title">Title</label>
-        <input autofocus type="text" />
+        <input id="title" autofocus type="text" />
         <label for="author">Author</label>
-        <input autofocus type="text" />
+        <input id="author" type="text" />
         <label for="isbn">ISBN#</label>
-        <input autofocus type="text" />
-        <button>Add Book</button>
+        <input id="isbn" type="text" />
+        <button type="submit">Add Book</button>
       </form>
       <table>
         <thead>
@@ -43,7 +43,9 @@
             <th>ISBN#</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <!-- Book entries will appear here -->
+        </tbody>
       </table>
     </div>
   </body>

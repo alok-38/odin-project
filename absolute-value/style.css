@@ -1,0 +1,30 @@
+body {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.character {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+    padding: 1rem;
+    width: 250px;
+}
